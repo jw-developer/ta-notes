@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: JW-Notes
+  pageTitleSuffix: " - JW-Notes"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: de-DE
   baseUrl: notes.janiswiederkehr.ch
   ignorePatterns:
     - private
@@ -94,7 +94,7 @@ plugins:
   - source: "@quartz-community/latex"
     enabled: true
     options:
-      renderEngine: katex
+      renderEngine: mathjax
     order: 80
   - source: "@quartz-community/citations"
     enabled: false
@@ -111,7 +111,7 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
   - source: "@quartz-themes/core"
-    enabled: true
+    enabled: false
     options:
       theme: default
       mode: both
@@ -127,7 +127,7 @@ plugins:
     enabled: true
     options:
       iterations: 600000
-      passwordField: password
+      passwordField: Passwort
       unlistWhenEncrypted: false
       outputPath: static/encryptedContentIndex.json
   - source: "@quartz-community/stacked-pages"
@@ -146,7 +146,7 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/cname"
     enabled: true
   - source: "@quartz-community/canvas-page"
@@ -156,7 +156,7 @@ plugins:
   - source: "@quartz-community/folder-page"
     enabled: true
   - source: "@quartz-community/tag-page"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/explorer"
     enabled: true
     layout:
@@ -166,7 +166,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 10
+      priority: 50
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -176,7 +176,7 @@ plugins:
       groupOptions:
         grow: true
   - source: "@quartz-community/backlinks"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 50
@@ -186,7 +186,7 @@ plugins:
       position: beforeBody
       priority: 10
   - source: "@quartz-community/content-meta"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
@@ -207,13 +207,13 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
       group: toolbar
   - source: "@quartz-community/breadcrumbs"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 5
@@ -230,8 +230,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Kontakt: mailto:jwiederkehr@student.ethz.ch
+        TA Notizen: https:ta.janiswiederkehr.ch
     layout:
       position: footer
       priority: 50
@@ -258,7 +258,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
@@ -267,7 +267,7 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/obsidian-plugin-excalidraw"
-    enabled: true
+    enabled: false
     options:
       enableInteraction: true
       darkMode: auto

@@ -1,10 +1,29 @@
 @use "./variables.scss" as *;
 @use "sass:color";
 
+.callout[data-callout="definition"] .callout-icon,
+.callout[data-callout="satz"] .callout-icon,
+.callout[data-callout="lemma"] .callout-icon,
+.callout[data-callout="theorem"] .callout-icon,
+.callout[data-callout="korollar"] .callout-icon,
+.callout[data-callout="beweis"] .callout-icon,
+.callout[data-callout="proof"] .callout-icon,
+.callout[data-callout="beispiel"] .callout-icon,
+.callout[data-callout="example"] .callout-icon,
+.callout[data-callout="aufgabe"] .callout-icon,
+.callout[data-callout="loesung"] .callout-icon,
+.callout[data-callout="solution"] .callout-icon,
+.callout[data-callout="wiederholung"] .callout-icon,
+.callout[data-callout="mc"] .callout-icon {
+  display: none;
+}
+
+
 .callout {
-  border: 1px solid var(--border);
+  border: none;
+  border-left: 2.5px solid var(--color);
   background-color: var(--bg);
-  border-radius: 5px;
+  border-radius: 0;
   padding: 0 1rem;
   overflow-y: hidden;
   box-sizing: border-box;
@@ -40,6 +59,52 @@
     --bg: #448aff10;
     --callout-icon: var(--callout-icon-note);
   }
+
+  // Custom Callouts
+  &[data-callout="definition"] {
+    --color: #09ad7a;
+    --bg: #09ad7110;
+  }
+
+  &[data-callout="satz"],
+  &[data-callout="lemma"],
+  &[data-callout="theorem"],
+  &[data-callout="korollar"] {
+    --color: #dba642;
+    --bg: #dba64210;
+  }
+
+  &[data-callout="beweis"],
+  &[data-callout="proof"] {
+    --color: #db4242;
+    --bg: transparent;
+    border: 1.5px solid var(--color);
+  }
+
+  &[data-callout="beispiel"],
+  &[data-callout="example"],
+  &[data-callout="aufgabe"],
+  &[data-callout="loesung"],
+  &[data-callout="solution"] {
+    --color: var(--dark);
+    --bg: transparent;
+    border: 1.5px solid var(--color);
+  }
+
+
+  &[data-callout="wiederholung"] {
+    --color: var(--gray);
+    --border: var(--lightgray);
+    --bg: transparent;
+  }
+
+  &[data-callout="mc"] {
+    --color: #7a43b5;
+    --border: #7a43b544;
+    --bg: #7a43b510;
+  }
+
+  // Default Callouts (from Quartz)
 
   &[data-callout="abstract"] {
     --color: #00b0ff;

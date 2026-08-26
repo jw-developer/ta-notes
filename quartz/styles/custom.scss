@@ -1,3 +1,20 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+.page-title {
+  text-align: center;
+}
+
+.page-title img {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.callout.is-collapsed .callout-content {
+  display: none;
+}
+
+.article-title {
+    font-size: 2.1em;
+}
