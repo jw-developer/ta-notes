@@ -12,6 +12,7 @@ configuration:
     - private
     - templates
     - .obsidian
+    - .gitignore
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
@@ -94,7 +95,7 @@ plugins:
   - source: "@quartz-community/latex"
     enabled: true
     options:
-      renderEngine: mathjax
+      renderEngine: katex
     order: 80
   - source: "@quartz-community/citations"
     enabled: false
@@ -155,6 +156,8 @@ plugins:
     enabled: true
   - source: "@quartz-community/folder-page"
     enabled: true
+    options:
+      showFolderCount: false
   - source: "@quartz-community/tag-page"
     enabled: false
   - source: "@quartz-community/explorer"
@@ -231,7 +234,7 @@ plugins:
     options:
       links:
         Kontakt: mailto:jwiederkehr@student.ethz.ch
-        TA Notizen: https:ta.janiswiederkehr.ch
+        TA Notizen: https://ta.janiswiederkehr.ch
     layout:
       position: footer
       priority: 50
@@ -245,10 +248,6 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-  - source: "@quartz-community/bases-page"
-    enabled: true
-    options: {}
-    order: 50
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
@@ -272,6 +271,18 @@ plugins:
       enableInteraction: true
       darkMode: auto
       exportPadding: 20
+    order: 50
+  - source: github:quartz-community/folder-page
+    enabled: true
+    options:
+      showFolderCount: true
+      showSubfolders: true
+    order: 50
+  - source: github:quartz-community/bases-page
+    enabled: true
+    options:
+      defaultViewType: table
+      linkResolution: shortest
     order: 50
 layout:
   groups:

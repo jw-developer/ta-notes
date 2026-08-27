@@ -1,5 +1,11 @@
 @use "./variables.scss" as *;
 
+// Breakpoint Mixin
+@mixin respond-to-mobile {
+  @media #{$mobile} { @content; }
+}
+
+// JW-Notes as title with logo
 .page-title {
   text-align: center;
 }
@@ -9,12 +15,71 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    @include respond-to-mobile {
+      display: none;
+    }
 }
 
+
+
+// Better callout boxes when collapsed
 .callout.is-collapsed .callout-content {
   display: none;
 }
 
+// Make title of page bigger
 .article-title {
-    font-size: 2.1em;
+    font-size: 2em;
+}
+
+// Make content base fit screen without overflow
+.bases-view-meta {
+  display: none;
+}
+
+.bases-table-wrapper table {
+  width: 95%;
+}
+
+// Disable default page listing (use custom bases)
+.page-listing {
+  display: none;
+}
+
+// Remove margin from Math output
+mjx-container[jax="SVG"][display="true"] {
+ margin: 0 !important;
+}
+
+// // Images inverting etc.
+// :root[saved-theme="dark"] img[alt="tikz"] {
+//   filter: invert(1);
+//   --webskit-filter: invert(1);
+// }
+
+img {
+  max-width: 60%; // set maximal width
+  max-height: 50%; // set maximal height
+  display: block; // make it a block element (text will not wrap around)
+  margin: 1rem auto; // center the image
+}
+
+:root[saved-theme="dark"] img[alt="tikz"] {
+  filter: invert(1);
+  --webskit-filter: invert(1);
+}
+
+:root[saved-theme="light"] img:not([alt="tikz"]):not([src$=".png"], [src$=".gif"]) {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+}
+
+// dont display function plots
+pre[data-language="functionplot"] {
+  display: none;
+}
+
+pre[data-language="tikz"] {
+  display: none;
 }
