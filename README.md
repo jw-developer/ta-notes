@@ -1,17 +1,9 @@
-# Quartz v5
+# JW-Notes
+This instance of a quartz digital garden is my version of publishing my university notes on the web. The notes are built using [Obsidian](https://obsidian.md) and then published via [Quartz](https://quartz.jzhao.xyz/). 
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+To tinker the site to my liking I added some custom CSS styling (see `quartz/styles`) aswell as the use of the config yaml (`quartz.config.yaml`). To fully make the website my own I also changed some of the plugins inside `node_modules`. Namely
+- Footer
+- Obsidian Flavoured Markdown
+- Page Title
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+My Obsidian config can be found in this repo: [obsidian-settings](https://github.com/jw-developer/obsidian-settings).
