@@ -1,37 +1,15 @@
 ---
-title: Herzlich Willkommen bei meinen Uni Notizen
+
+title: Herzlich Willkommen in meiner Übungsstunde
+
 ---
-Hi, ich bin Janis und studiere Physik an der ETH Zürich. Auf dieser Webseite teile ich meine Notizen für alle. Diese Webseite ist grundsätzlich passwortgeschützt. Jeder kann gerne einen Zugriff per Mail bekommen.^J
+Willkommen in meiner Übungsstunde. Hier lade ich jeweils meine Notizen der Übungsstunde hoch. Bei Fragen aller Art könnt ihr mich per E-Mail erreichen: [jwiederkehr@student.ethz.ch](mailto:jwiederkehr@student.ethz.ch).
+ 
+## Analysis I: eine Variable (HS26)
+Professor: Prof. Dr. Manfred Einsiedler  
+Vorlesungsverzeichnis (401-1261-07L): [vvz.ethz.ch](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2026W&ansicht=LEHRVERANSTALTUNGEN&lerneinheitId=203950&lang=de)
+[Notizen](https://ta.janiswiederkehr.ch/analysis-i)
 
-Es könnten sich durchaus einige Fehler eingeschlichen haben. Bei Feedback gerne eine E-Mail an [jwiederkehr@student.ethz.ch](mailto:jwiederkehr@student.ethz.ch) schreiben.
-
-> "It's nice to be right sometimes."  
-> ~ _Peter Higgs_
-
-**5. Semester (HS 2026)**
-- [[01 Quantenmechanik I|Quantenmechanik I]]
-- [[02 Astrophysik I|Astrophysik]]
-- [[03 Festkörperphysik|Einführung in die Festkörperphysik]]
-
-**4. Semester (FS 2026)**
-- [[Elektrodynamik]]
-- [[Theorie der Wärme]]
-- [[MMP II|Mathematische Methoden der Physik II]]
-- [[Numerische Methoden]]
-
-**3. Semester (HS 2025)**
-- [[Allgemeine Mechanik]]
-- [[Physik III]]
-- [[MMP I|Mathematische Methoden der Physik I]]
-- [[Funktionentheorie]]
-
-**2. Semester (FS 2025)**
-- [[Analysis II]]
-- [[Lineare Algebra II]]
-- [[Physik II]]
-- [[Datenanalyse|Datenanalyse in der Physik]]
-
-**1. Semester (HS 2024)**
-- [[Analysis I]]
-- [[Lineare Algebra II]]
-- [[Physik I]]
+**Übungsstunde**  
+Dienstag 16:15 - 18:00 im [ML J 37.1](https://ethz.ch/staffnet/de/service/raeume-gebaeude/rauminfo/raumdetails.html?building=ML&floor=J&room=34.1&lang=de)
+Mittwoch 23:15 - 13:00 im [ML J 34.1](https://ethz.ch/de/utils/location.html?building=ML&floor=J&room=34.1&lang=de) 
